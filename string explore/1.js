@@ -20,6 +20,13 @@ function solution2(s) {
   return answer;
 }
 
+function solution3(s) {
+  let reversed = s.split("").reverse().join("");
+  let answer = s.toLowerCase() === reversed.toLowerCase() ? "YES" : "NO";
+  return answer;
+}
+
 let str = "moooooom";
 console.log(solution(str));
 console.log(solution2(str));
+console.log(solution3(str));
